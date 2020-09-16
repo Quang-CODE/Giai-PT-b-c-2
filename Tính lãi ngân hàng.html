@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tính lãi ngân hàng</title>
+</head>
+<body>
+    <script>
+        let year = parseInt(prompt("Nhập số năm mà bạn muốn gửi tiết kiệm ngân hàng"))
+        let capital = 10000000
+        for (i=1;i<=year;i++) {
+            capital = capital*1.08
+        }
+        capital= Math.floor(capital)
+        document.write("Số tiền sau " + year + " năm " + " là " + capital  +" VNĐ")
+    </script>
+
+</body>
+</html>
